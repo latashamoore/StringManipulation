@@ -25,8 +25,23 @@ class MyString():
     #Returns a string that consists of the substring between start and end indexes (both included) in the current string.
     #Index 1 corresponds to the first character in the current string.'''
     def getSubstring( self,start, end):
+'''
+        substring = []
+        length = len(self.str)
+        for a in range(0,length):
+            print("a is", a, "start is", start, "end is", end)
+            if (a >= start) and (a <= end):
+                substring.append(self.str(a))
+                print(substring)
+        return substring
+'''
+        sub=sub""
+        try:
+            for a in range(start,end):
+        except IndexError:
+            return("Index out of bounds")
+        return sub
 
-        return 1
     #Breaks the string down, and returns it as a character string
     def getCharList(self):
 
